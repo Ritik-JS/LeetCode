@@ -3,7 +3,7 @@ class Solution {
 
         HashMap<String, String> map = new HashMap<>();
 
-        // Put knowledge into HashMap
+        
         for (List<String> pair : knowledge) {
             map.put(pair.get(0), pair.get(1));
         }
@@ -16,7 +16,7 @@ class Solution {
 
                 int j = i + 1;
 
-                // Find closing bracket
+            
                 while (s.charAt(j) != ')') {
                     j++;
                 }
@@ -29,7 +29,7 @@ class Solution {
                     ans.append("?");
                 }
 
-                // Jump after ')'
+                
                 i = j;
 
             } else {
